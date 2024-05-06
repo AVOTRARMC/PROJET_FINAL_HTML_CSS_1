@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+#container{
+ background: url(background_linux.png);
+ height: 100vh;
+ background-position: center;
+ padding:11px 10px;
+ background-size: cover
+}
+header{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 80px;
+
+}
+header .logo{
+ font-size:30px;
+ color: white;
+ font-family: cursive;
+}
+header .navbar{
+ display: flex;
+ list-style: none;
+}
+header .navbar li{
+ margin: 0 20px;
+ padding: 0;
+}
+header .navbar li a{
+ text-decoration: none;
+ cursor: pointer;
+ padding: 30px;
+ color: white;
+ font-weight: 600;
+}
+header .navbar li a:hover{
+  cursor: pointer;
+  background-color: aqua;
+  border: 1px solid rgb(230, 240, 240);
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.text h1{ 
+  color: white;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.text p{
+  color: yellowgreen;
+  font-size: 50px;
+  padding: 20px ;
+  /* width: 60%; */
+  font-weight: 700;
+}
+.text a{
+  color: white;
+  text-decoration: none;
+  padding: 11px 30px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  transform: 0.8s;
+}
+.text a:hover{
+  color: black;
+  border: solid 2px black;
+  box-shadow: 0px 0px 5px 5px aquamarine;
+  letter-spacing: 2px;
+  background-color: aquamarine;
+}
+
+#propo{
+  height: auto;
+  width: 80%;
+  margin: 0px  10%;
+}
+.title{
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #0000;
+  font-size: 25px;
+
+}
+.sous{
+text-align: center;
+font-weight: bold;
+text-transform: capitalize;
+font-size: 20px;
+margin: 50px;;
+}
+
+.soussous{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  width: 90%;
+  height: 0 auto;
+  gap: 30px;
+}
+.texte{
+  color: black;
+  padding: 15px;
+  width: 60%;
+  height: auto;
+}
+.sary{
+  width: 40%;
+  height: 0 auto;
+}
+
+.sary img{
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+  
+#service{
+  background: #191919;
+  height: 90vh;
+
+}
+
+.titre h1{
+  color: rgb(241, 232, 232);
+  width: 500px;
+  margin:20px auto;
+  text-align: center;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.cadre{
+  height: 0 auto;
+  width: 90%;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin: 5px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+h5{
+    color: red;
+  font-size: 23px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+h5:hover{
+  color: aqua;
+}
+
+.phra em{
+color: white;
+font-size: 15px;
+cursor: pointer;
+width: 30%;
+}
+.em:hover{
+  font-size: 20px;
+  color: #fff;
+}
+
+.cadre .button{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+}
+.cadre .button:hover{
+  background-color: transparent;
+  border: 2px solid red;
+  cursor: pointer;
+  color: white;
+}
+.titre_contact{
+  display: flex;
+  justify-content: center;
+}
+#contact{
+  background-color: rgba(0, 255, 255, 0.651);
+  height: auto;
+}
+.detail_contact{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  color: transparent;
+}
+.raiky a{
+  color: black;
+  text-decoration: none;
+}
+.raiky a:hover{
+  color: red;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid 1px red;
+}
+.roa a{
+  color: black;
+  text-decoration: none;
+}
+.roa a:hover{
+  color: red;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid 1px red;
+}
+
+
+
+@media (max-width:750px) {
+  #container{
+    padding: 5px 20px;
+  }
+  header .navbar{
+    display: flex;
+  }
+  header .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid white;
+    height: 50px;
+    width: 50px;
+   z-index:2;
+  }
+  header .menu::before{
+    content: "";
+    width: 28px;
+    height: 4px;
+    background-color:#fff ;
+    transform: translateY(-10px);
+    position: absolute;
+
+
+  }
+  header .menu::before
+  header .menu::after{
+    content: "";
+    width: 28px;
+    height: 4px;
+    background-color:#fff ;
+    transform: translateY(-10px);
+    position: absolute;
+  }
+}
+
+
+
